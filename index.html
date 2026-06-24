@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitebox</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/x-icon" href="Images/favicon/favicon-package/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="">
     <style>
-
         *
         {
             margin: 0;
@@ -81,10 +80,9 @@
             width: 180px;
         }
 
-        section
+        .main
         {
             background-color: beige;
-            height: 600px;
         }
 
 
@@ -109,10 +107,87 @@
             
         }
 
+        .hero{
+            height: 90vh;
+            background-image:url(Images/herobackground.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:center;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .hero-content {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        .hero-content button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .hero-content button:hover {
+            background-color: black;
+            color: red;
+        }
+
+        .video-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            gap: 40px;
+        }
+
+        .video-text {
+            flex: 1;
+            text-align: center;
+        }
+
+        .video-box {
+            flex: 1;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+        }
+
+        .about{
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .about h2{
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: red;
+        }
+
+        .about p{
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            color:#333;
+            line-height: 1.6;
+        }
+
     </style>
 </head>
 <body>
-    <header style>
+    <header>
         <div class="tempdiv">
             <hr style="padding-top: 7px;">
         </div>
@@ -120,7 +195,7 @@
             <div class="navigation">
                 <!-- <hr> -->
                 <!-- <h1><span style="color: white;">Bite</span><span style="color:red;">box</span></h1> -->
-                <img src="../bitebox/Images/bitebox logo.png" alt="Bitebox Logo">
+                <img src="../bitebox/Images/biteboxlogo.png" alt="Bitebox Logo">
                 <ul>   
                     <li class="temp"><a href="./menu.html"><i class="fa-solid fa-bars"></i> Menu</a></li>
                     <li class="temp"><a href="./home.html"><i class="fa-solid fa-house"></i> Home</a></li>
@@ -135,7 +210,32 @@
             <hr style="padding-bottom: 7px;">
         </div>
     </header>
-    <section>
+    <section class="hero">
+        <section class="hero-content">
+            <h1>Welcome to Bitebox</h1>
+            <p>Order your favourate meals anytime, anywhere</p>
+            <button>Order Now</button>
+        </section>
+    </section>
+    <section class="video-section">
+        <div class="video-text">
+            <h2>Our Food Story</h2>
+            <p>Experience the taste of delicious meal crafted with love. From burger's to pizza's we deliver happiness at your doorstep.</p>
+        </div>
+        <div class="video-box">
+            <video autoplay muted loop playsinline>
+                <source src="Video/Delicious_burger_and_pizza.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <section class="about">
+        <h2>Who We Are</h2>
+        <p>We are passionate food lovers dedicated to bringing you the best dining experience.<br />
+           Our mission is to serve fresh, high-quality meals made with love and delivered with care.<br />
+           From quick bites to full meals, we ensure every order brings satisfaction and joy.
+        </p>
+    </section>
+    <section class="main">
         <h2>Main Section</h2>
     </section>
     <footer>
@@ -146,4 +246,4 @@
         </ul> 
     </footer>
 </body>
-</html>
+</html
