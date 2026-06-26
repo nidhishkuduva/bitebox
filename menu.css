@@ -7,6 +7,7 @@
         header {
             position: sticky;
             top: 0;
+            z-index: 1;
         }
 
         .navigation {
@@ -37,6 +38,7 @@
         nav li:last-child a:hover{
             background-color: black;
             color: red;
+            border: 2px solid red;
         }
 
         ul
@@ -86,6 +88,17 @@
             
         }
 
+        footer
+        {
+            background-color: aliceblue;
+            height: 200px;
+        }
+
+        .foot{
+            display: inline;
+            margin: 150px;
+        }
+
         .menu {
             background-color: beige;
         }
@@ -128,14 +141,17 @@
             text-align: center;
             background-color: red;
             color: white;
-            border: 2px solid red;
+            border: 2px solid black;
             border-radius: 30px;
             padding: 10px;
+            cursor: pointer;
+            box-shadow: 3px 2px 3px 0px black;
         }
 
         .menu-item button:hover {
             background-color: black;
             color: red;
+            border: 2px solid red;
         }
 
         .menu-filter {
@@ -178,7 +194,7 @@
             width: 75px;
             border-radius: 50%;
             border: 2px solid black;
-            
+            cursor: pointer;
         }
 
         .filter img:hover {

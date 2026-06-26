@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="Images/favicon/favicon-package/favicon.ico">
+    <link rel="stylesheet" href="cart.css">
 </head>
 <body>
-    <h1>Welcome to Cart page</h1>
+    <header>
+        <div class="tempdiv">
+            <hr style="padding-top: 7px;">
+        </div>
+        <nav>
+            <div class="navigation">
+                <img src="../bitebox/Images/biteboxlogo.png" alt="Bitebox Logo">
+                <ul>   
+                    <li class="temp"><a href="./menu.html"><i class="fa-solid fa-bars"></i> Menu</a></li>
+                    <li class="temp"><a href="./home.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li class="temp"><a href="./bitedeals.html"><i class="fa-solid fa-drumstick-bite"></i> BiteDeals</a></li>
+                    <li class="temp"><a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i> Cart</a></li>
+                    <li class="temp"><a href="./login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="tempdiv">
+            <hr style="padding-bottom: 7px;">
+        </div>
+    </header>
+    <section class="three-step">
+        <div>
+            <h3>Cart</h3>
+            <hr>
+            <h3>Address</h3>
+            <hr>
+            <h3>Payment</h3>
+        </div>
+        <h3 id="secure"><i class="fa-solid fa-shield-heart"></i>100% Secure</h3>
+    </section>
+    <section class="cart">
+        <table>
+            <thead>
+                <tr>
+                    <th class="img-col">Item</th>
+                    <th class="price-col">Price</th>
+                    <th class="quantity-col">Quantity</th>
+                    <th class="total-col">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="img-col">
+                        <img src="Images/pizza.jpg" alt="Pizza">
+                       <div class="item">
+                            <h2>Pizza</h2>
+                            <p>An oven-baked flatbread topped with a savory layer of tomato sauce, melted cheese, and assorted meats or vegetables. Originating in Italy, it is shared globally as the ultimate party and slice-and-go comfort meal.</p>
+                       </div>
+                    </td>
+                    <td class="price-col">₹120</td>
+                    <td class="quantity-col">
+                        <button>-</button>
+                        1
+                        <button>+</button>
+                    </td>
+                    <td class="total-col">₹120</td>
+                </tr>
+                <tr>
+                    <td class="img-col">
+                        <img src="Images/pasta.jpg" alt="Pasta">
+                        <div class="item">
+                            <h2>Pasta</h2>
+                            <p>An Italian staple made from wheat dough, shaped into diverse forms like spaghetti, penne, or macaroni, and boiled until tender. It serves as a versatile canvas for rich ragùs, creamy alfredos, or simple garlic and olive oil sauces.</p>
+                       </div>
+                    </td>
+                    <td class="price-col">₹100</td>
+                    <td class="quantity-col">
+                        <button>-</button>
+                        1
+                        <button>+</button>
+                    </td>
+                    <td class="total-col">₹100</td>
+                </tr>
+            </tbody>    
+        </table>
+    </section>    
+    <footer>
+        <ul>
+            <li class="foot">About us</li>
+            <li class="foot">Contact Us</li>
+            <li class="foot">@copyright 2026 Bitebox</li>
+        </ul> 
+    </footer>
 </body>
 </html>

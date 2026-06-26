@@ -7,6 +7,7 @@
         header {
             position: sticky;
             top: 0;
+            z-index: 1;
         }
         
         .navigation {
@@ -37,6 +38,7 @@
         nav li:last-child a:hover{
             background-color: black;
             color: red;
+            border: 2px solid red;
         }
 
         ul
@@ -64,11 +66,6 @@
             padding-bottom: 4px;
         }
         
-        .foot{
-            display: inline;
-            margin: 150px;
-        }
-        
         img {
             display: inline-block;
             margin-right: 50px; 
@@ -85,6 +82,11 @@
         {
             background-color: aliceblue;
             height: 200px;
+        }
+
+        .foot{
+            display: inline;
+            margin: 150px;
         }
 
         nav a
@@ -122,6 +124,10 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            border: 2px solid black;
+            border-radius: 30px;
+            box-shadow: 3px 2px 3px 0px black;
+            padding: 10px;
         }
 
 
@@ -134,11 +140,14 @@
             font-weight: bold;
             border-radius: 5px;
             cursor: pointer;
+            margin: 10px;
+            border: 2px solid black;
         }
         
         .hero-content button:hover {
             background-color: black;
             color: red;
+            border: 2px solid red;
         }
 
         .video-section {
