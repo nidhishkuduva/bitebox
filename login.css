@@ -1,4 +1,4 @@
-*{
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -96,4 +96,71 @@
         .foot{
             display: inline;
             margin: 150px;
+        }
+
+        .auth-container {
+            background-image: url(Images/herobackground.png);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width:100%;
+            height: 70vh;
+        }
+
+        .auth {
+            background-color: rgba(224, 213, 199, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid black;
+            border-radius: 30px;
+            width: 40%;
+            height: 70%;
+            box-shadow: 3px 2px 3px 0px black;
+            
+        }
+
+        td {
+            text-align: center;
+            align-items: center; 
+        }
+
+        input {
+            border-radius: 5px;
+            max-width:200px;
+            height: 25px;
+        }
+
+        button {
+            text-align: center;
+            background-color: red;
+            color: white;
+            border: 2px solid black;
+            border-radius: 30px;
+            padding: 10px;
+            cursor: pointer;
+            box-shadow: 3px 2px 3px 0px black;
+            margin-left: 20px;
+            margin-right: 20px;
+            width: 100px;
+        }
+
+        a {
+            color:black;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: red;
+        }
+
+        button:hover {
+            background-color: black;
+            color: red;
+            border: 2px solid red;
         }

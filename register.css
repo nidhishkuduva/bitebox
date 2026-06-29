@@ -65,28 +65,11 @@
             border-bottom: 2px solid red;
             padding-bottom: 4px;
         }
-        
+
         img {
             display: inline-block;
             margin-right: 50px; 
             width: 180px;
-        }
-
-        .main
-        {
-            background-color: beige;
-        }
-
-
-        footer
-        {
-            background-color: aliceblue;
-            height: 200px;
-        }
-
-        .foot{
-            display: inline;
-            margin: 150px;
         }
 
         nav a
@@ -104,91 +87,80 @@
             
         }
 
-        .video-section {
-            background-color: beige;
+        footer
+        {
+            background-color: aliceblue;
+            height: 200px;
         }
 
-        .hero{
-            height: 90vh;
-            background-image:url(Images/herobackground.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position:center;
+        .foot{
+            display: inline;
+            margin: 150px;
+        }
+
+        .auth-container {
+            background-image: url(Images/herobackground.png);
             display:flex;
-            align-items: center;
             justify-content: center;
-            color: white;
+            align-items: center;
+            text-align:center;
+            width:100%;
+            height: 70vh;
         }
 
-        .hero-content {
-            background-color:  rgba(66, 66, 64, 0.8);
-            justify-content: center;
+        .auth {
+            background-color: rgba(224, 213, 199, 0.8);
+            display: flex;
+            flex-direction: column;
             align-items: center;
-            text-align: center;
+            justify-content: center;
+            padding: 20px;
+            margin: 20px;
             border: 2px solid black;
             border-radius: 30px;
+            width: 40%;
+            height: 70%;
             box-shadow: 3px 2px 3px 0px black;
-            padding: 10px;
+            
         }
 
+        td {
+            text-align: center;
+            align-items: center;
+        }
 
-        .hero-content button {
+        input {
+            border-radius: 5px;
+            max-width:200px;
+            height: 25px;
+        }
+
+        button {
+            text-align: center;
             background-color: red;
             color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px;
             border: 2px solid black;
+            border-radius: 30px;
+            padding: 10px;
+            cursor: pointer;
+            box-shadow: 3px 2px 3px 0px black;
+            margin-left: 20px;
+            margin-right: 20px;
+            width: 100px;
         }
-        
-        .hero-content button:hover {
+
+        a {
+            color:black;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: red;
+        }
+
+        button:hover {
             background-color: black;
             color: red;
             border: 2px solid red;
-        }
-
-        .video-section {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px;
-            gap: 40px;
-        }
-
-        .video-text {
-            flex: 1;
-            text-align: center;
-        }
-
-        .video-box {
-            flex: 1;
-        }
-
-        video {
-            width: 100%;
-            height: 100%;
-        }
-
-        .about{
-            text-align: center;
-            padding: 60px 20px;
-            background-color: #f9f9f9;
-        }
-
-        .about h2{
-            font-size: 32px;
-            margin-bottom: 20px;
-            color: red;
-        }
-
-        .about p{
-            max-width: 700px;
-            margin: auto;
-            font-size: 18px;
-            color:#333;
-            line-height: 1.6;
         }
