@@ -117,9 +117,9 @@
             padding: 20px;
             margin: 20px;
             border: 2px solid black;
-            border-radius: 30px;
-            width: 40%;
-            height: 70%;
+            border-radius: 10px;
+            width: 30%;
+            height: 75%;
             box-shadow: 3px 2px 3px 0px black;
             
         }
@@ -130,9 +130,10 @@
         }
 
         input {
-            border-radius: 5px;
+            border-radius: 30px;
             max-width:200px;
-            height: 25px;
+            height: 35px;
+            width: 200px;
         }
 
         button {
@@ -140,23 +141,23 @@
             background-color: red;
             color: white;
             border: 2px solid black;
-            border-radius: 30px;
+            border-radius: 5px;
             padding: 10px;
             cursor: pointer;
             box-shadow: 3px 2px 3px 0px black;
             margin-left: 20px;
             margin-right: 20px;
-            width: 100px;
+            width: 200px;
         }
 
         a {
-            color:black;
+            color:red;
             cursor: pointer;
             text-decoration: none;
         }
 
         a:hover{
-            color: red;
+            color: white;
         }
 
         button:hover {
