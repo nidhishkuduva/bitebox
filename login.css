@@ -1,167 +1,212 @@
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 1;
-        }
-        
-        .navigation {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start; 
-            width: 100%;
-        }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 
-        nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: rgb(0, 0, 0);
-            padding: 15px 20px;
-        }
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
 
-        nav a:hover{
-            color: red;
-        }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 15px 20px;
+}
 
-        nav li:last-child a{
-            background-color: red;
-            padding: 6px 12px;
-            border-radius: 5px;
-        }
+nav a:hover {
+    color: red;
+}
 
-        nav li:last-child a:hover{
-            background-color: black;
-            color: red;
-            border: 2px solid red;
-        }
+nav li:last-child a {
+    background-color: red;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
 
-        ul
-        {
-            display: flex;
-            list-style: none;
-            align-items: center;
-            justify-content: space-between;
-            margin-left: auto;
-            gap: 40px;
-        }
+nav li:last-child a:hover {
+    background-color: black;
+    color: red;
+    border: 2px solid red;
+}
 
-        hr {
-            border: 0;
-            border-top: 3px solid #333; 
-            width: 100%;
-            margin: 0;
-            background-color: #1e1d1d;
-        }
-        
-        .temp{
-            color: red;
-            font-weight: bold;
-            border-bottom: 2px solid red;
-            padding-bottom: 4px;
-        }
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    gap: 40px;
+}
 
-        img {
-            display: inline-block;
-            margin-right: 50px; 
-            width: 180px;
-        }
+hr {
+    border: 0;
+    border-top: 3px solid #333;
+    width: 100%;
+    margin: 0;
+    background-color: #1e1d1d;
+}
 
-        nav a
-        {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-        } 
+.temp {
+    color: red;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+    padding-bottom: 4px;
+}
 
-        .tempdiv{
-            height: 10px;
-            background-color: black;
-            
-        }
+img {
+    display: inline-block;
+    margin-right: 50px;
+    width: 180px;
+}
 
-        footer
-        {
-            background-color: aliceblue;
-            height: 200px;
-        }
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 
-        .foot{
-            display: inline;
-            margin: 150px;
-        }
+.tempdiv {
+    height: 10px;
+    background-color: black;
+}
 
-        .auth-container {
-            background-image: url(Images/herobackground.png);
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            width:100%;
-            height: 70vh;
-        }
+.auth-container {
+    background-image: url(Images/herobackground.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+}
 
-        .auth {
-            background-color: rgba(224, 213, 199, 0.8);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            margin: 20px;
-            border: 2px solid black;
-            border-radius: 10px;
-            width: 30%;
-            height: 75%;
-            box-shadow: 3px 2px 3px 0px black;
-            
-        }
+.auth {
+    background-color: rgba(224, 213, 199, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    height: 85%;
+    box-shadow: 3px 2px 3px 0px black;
+}
 
-        td {
-            text-align: center;
-            align-items: center; 
-        }
+td {
+    text-align: center;
+    align-items: center;
+}
 
-        input {
-            border-radius: 30px;
-            max-width:200px;
-            height: 35px;
-            width: 200px;
-        }
+input {
+    border-radius: 15px;
+    max-width: 200px;
+    height: 35px;
+    width: 200px;
+    padding-left: 10px;
+}
 
-        button {
-            text-align: center;
-            background-color: red;
-            color: white;
-            border: 2px solid black;
-            border-radius: 5px;
-            padding: 10px;
-            cursor: pointer;
-            box-shadow: 3px 2px 3px 0px black;
-            margin-left: 20px;
-            margin-right: 20px;
-            width: 200px;
-        }
+button {
+    text-align: center;
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 3px 2px 3px 0px black;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 200px;
+}
 
-        a {
-            color:red;
-            cursor: pointer;
-            text-decoration: none;
-        }
+a {
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+}
 
-        a:hover{
-            color: white;
-        }
+a:hover {
+    color: white;
+}
 
-        button:hover {
-            background-color: black;
-            color: red;
-            border: 2px solid red;
-        }
+button:hover {
+    background-color: black;
+    color: red;
+    border: 2px solid red;
+}
+
+#error {
+    color: red;
+}
+
+footer ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    background-color: black;
+    color: #ccc;
+    padding: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer-box h2, 
+.footer-box h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-box span {
+    color: red;
+}
+
+footer a{
+    color:#ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: red;
+}
+
+.social-icons {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #ccc;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+}

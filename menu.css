@@ -1,203 +1,243 @@
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 1;
-        }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 
-        .navigation {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start; 
-            width: 100%;
-        }
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
 
-        nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: rgb(0, 0, 0);
-            padding: 15px 20px;
-        }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 15px 20px;
+}
 
-        nav a:hover{
-            color: red;
-        }
+nav a:hover {
+    color: red;
+}
 
-        nav li:last-child a{
-            background-color: red;
-            padding: 6px 12px;
-            border-radius: 5px;
-        }
+nav li:last-child a {
+    background-color: red;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
 
-        nav li:last-child a:hover{
-            background-color: black;
-            color: red;
-            border: 2px solid red;
-        }
+nav li:last-child a:hover {
+    background-color: black;
+    color: red;
+    border: 2px solid red;
+}
 
-        ul
-        {
-            display: flex;
-            list-style: none;
-            align-items: center;
-            justify-content: space-between;
-            margin-left: auto;
-            gap: 40px;
-        }
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    gap: 40px;
+}
 
-        hr {
-            border: 0;
-            border-top: 3px solid #333; 
-            width: 100%;
-            margin: 0;
-            background-color: #1e1d1d;
-        }
-        
-        .temp{
-            color: red;
-            font-weight: bold;
-            border-bottom: 2px solid red;
-            padding-bottom: 4px;
-        }
+hr {
+    border: 0;
+    border-top: 3px solid #333;
+    width: 100%;
+    margin: 0;
+    background-color: #1e1d1d;
+}
 
-        img {
-            display: inline-block;
-            margin-right: 50px; 
-            width: 180px;
-        }
+.temp {
+    color: red;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+    padding-bottom: 4px;
+}
 
-        nav a
-        {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-        } 
+img {
+    display: inline-block;
+    margin-right: 50px;
+    width: 180px;
+}
 
-        .tempdiv{
-            height: 10px;
-            background-color: black;
-            
-            
-        }
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 
-        footer
-        {
-            background-color: aliceblue;
-            height: 200px;
-        }
+.tempdiv {
+    height: 10px;
+    background-color: black;
+}
 
-        .foot{
-            display: inline;
-            margin: 150px;
-        }
+.menu {
+    background-color: beige;
+}
 
-        .menu {
-            background-color: beige;
-        }
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
 
-        .menu-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content:space-evenly;
-            margin-top: 20px;
-        }
+.menu-item {
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    border: 2px solid;
+    border-radius: 30px;
+    box-shadow: 3px 2px 3px 0px black;
+    text-align: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
 
-        .menu-item {
-            margin: 10px;
-            padding: 20px;
-            width: 30%;
-            border: 4px solid;
-            border-radius: 30px;
-            box-shadow: 3px 2px 3px 0px black;
-            text-align:center;
-            align-items: center;
-            background-color: antiquewhite;
-        }
+.menu-item h3 {
+    margin-bottom: 10px;
+}
 
-        .menu-item h3 {
-            margin-bottom: 10px;
-        }
+.menu-item p {
+    margin-bottom: 10px;
+}
 
-        .menu-item p {
-            margin-bottom: 10px;
-        }
+.menu-item img {
+    width: 99%;
+    height: 50%;
+    border-radius: 30px;
+}
 
-        .menu-item img {
-            width: 99%;
-            height: 50%;
-            border-radius: 30px;
-        }
+.menu-item button {
+    text-align: center;
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 3px 2px 3px 0px black;
+}
 
-        .menu-item button {
-            text-align: center;
-            background-color: red;
-            color: white;
-            border: 2px solid black;
-            border-radius: 30px;
-            padding: 10px;
-            cursor: pointer;
-            box-shadow: 3px 2px 3px 0px black;
-        }
+.menu-item button:hover {
+    background-color: black;
+    color: red;
+    border: 2px solid red;
+}
 
-        .menu-item button:hover {
-            background-color: black;
-            color: red;
-            border: 2px solid red;
-        }
+.menu-filter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: start;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
-        .menu-filter {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            text-align: start;
-            margin-left: 30px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
+.filter {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgb(203, 203, 18);
+    margin-left: -20px;
+    margin-bottom: 10px;
+}
 
-        .filter {
-            height: 80px;
-            width: 80px;
-            border-radius: 50%;
-            background-color: rgb(203, 203, 18);
-            margin-left: -20px;
-            margin-bottom: 10px;
-        }
+.menu > h2 {
+    text-align: center;
+    padding: 10px;
+    color: red;
+}
 
-        .menu > h2 {
-            text-align: center;
-            padding: 10px;
-            color: red;
-        }
+.filter p {
+    padding-top: 6px;
+    padding-left: 15px;
+}
 
-        .filter p {
-            padding-top: 6px;
-            padding-left: 15px;
-        }
+.filter p:hover {
+    color: red;
+    cursor: pointer;
+}
 
-        .filter p:hover {
-            color: red;
-            cursor: pointer;
-        }
+.filter img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+}
 
-        .filter img {
-            height: 75px;
-            width: 75px;
-            border-radius: 50%;
-            border: 2px solid black;
-            cursor: pointer;
-        }
+.filter img:hover {
+    transform: scale(1.1);
+    border: 2px solid red;
+}
 
-        .filter img:hover {
-            transform: scale(1.1);
-            border: 2px solid red;
-        }
+footer ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    background-color: black;
+    color: #ccc;
+    padding: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer-box h2, 
+.footer-box h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-box span {
+    color: red;
+}
+
+footer a{
+    color:#ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: red;
+}
+
+.social-icons {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #ccc;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+}

@@ -1,101 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/x-icon" href="Images/favicon/favicon-package/favicon.ico">
-    <link rel="stylesheet" href="cart.css">
-</head>
-<body>
-    <header>
-        <div class="tempdiv">
-            <hr style="padding-top: 7px;">
-        </div>
-        <nav>
-            <div class="navigation">
-                <a href="index.html"><img src="../bitebox/Images/biteboxlogo.png" alt="Bitebox Logo"></a> 
-                <ul>   
-                    <li class="temp"><a href="./menu.html"><i class="fa-solid fa-bars"></i> Menu</a></li>
-                    <li class="temp"><a href="./home.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li class="temp"><a href="./bitedeals.html"><i class="fa-solid fa-drumstick-bite"></i> BiteDeals</a></li>
-                    <li class="temp"><a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i> Cart</a></li>
-                    <li class="temp"><a href="./login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a></li>
-                </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cart</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/x-icon" href="Images/favicon/favicon-package/favicon.ico" />
+        <link rel="stylesheet" href="cart.css" />
+    </head>
+    <body>
+        <header>
+            <div class="tempdiv">
+                <hr style="padding-top: 7px" />
             </div>
-        </nav>
-        <div class="tempdiv">
-            <hr style="padding-bottom: 7px;">
-        </div>
-    </header>
-    <section class="three-step">
-        <div>
-            <h3>Cart</h3>
-            <hr>
-            <h3>Address</h3>
-            <hr>
-            <h3>Payment</h3>
-        </div>
-        <h3 id="secure"><i class="fa-solid fa-shield-heart"></i>100% Secure</h3>
-    </section>
-    <section class="cart">
-        <table>
-            <thead>
-                <tr>
-                    <th class="img-col">Item</th>
-                    <th class="price-col">Price</th>
-                    <th class="quantity-col">Quantity</th>
-                    <th class="total-col">Total</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="img-col">
-                        <img src="Images/pizza.jpg" alt="Pizza">
-                       <div class="item">
-                            <h2>Pizza</h2>
-                            <p>An oven-baked flatbread topped with a savory layer of tomato sauce, melted cheese, and assorted meats or vegetables. Originating in Italy, it is shared globally as the ultimate party and slice-and-go comfort meal.</p>
-                       </div>
-                    </td>
-                    <td class="price-col">₹120</td>
-                    <td class="quantity-col">
-                        <button>-</button>
-                        1
-                        <button>+</button>
-                    </td>
-                    <td class="total-col">₹120</td>
-                </tr>
-                <tr>
-                    <td class="img-col">
-                        <img src="Images/pasta.jpg" alt="Pasta">
-                        <div class="item">
-                            <h2>Pasta</h2>
-                            <p>An Italian staple made from wheat dough, shaped into diverse forms like spaghetti, penne, or macaroni, and boiled until tender. It serves as a versatile canvas for rich ragùs, creamy alfredos, or simple garlic and olive oil sauces.</p>
-                       </div>
-                    </td>
-                    <td class="price-col">₹100</td>
-                    <td class="quantity-col">
-                        <button>-</button>
-                        1
-                        <button>+</button>
-                    </td>
-                    <td class="total-col">₹100</td>
-                </tr>
-                <tr>
-                    <td class="last" colspan="1"><h2>Grand Total:</h2></td>
-                    <td class="last" colspan="1"><h2>₹220</h2></td>
-                    <td class="last" colspan="2"><button id="checkout">Checkout</button></td>  
-                </tr>
-            </tbody>    
-        </table>
-    </section>    
-    <footer>
-        <ul>
-            <li class="foot">About us</li>
-            <li class="foot">Contact Us</li>
-            <li class="foot">@copyright 2026 Bitebox</li>
-        </ul> 
-    </footer>
-</body>
+            <nav>
+                <div class="navigation">
+                    <a href="index.html"><img src="../bitebox/Images/biteboxlogo.png" alt="Bitebox Logo" /></a>
+                    <ul>
+                        <li class="temp">
+                            <a href="./menu.html"><i class="fa-solid fa-bars"></i> Menu</a>
+                        </li>
+                        <li class="temp">
+                            <a href="./index.html"><i class="fa-solid fa-house"></i> Home</a>
+                        </li>
+                        <li class="temp">
+                            <a href="./bitedeals.html"><i class="fa-solid fa-drumstick-bite"></i> BiteDeals</a>
+                        </li>
+                        <li class="temp">
+                            <a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i> Cart</a>
+                        </li>
+                        <li class="temp">
+                            <a href="./login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="tempdiv">
+                <hr style="padding-bottom: 7px" />
+            </div>
+        </header>
+        <section class="three-step">
+            <div>
+                <h3>Cart</h3>
+                <hr />
+                <h3>Address</h3>
+                <hr />
+                <h3>Payment</h3>
+            </div>
+            <h3 id="secure"><i class="fa-solid fa-shield-heart"></i>100% Secure</h3>
+        </section>
+        <section class="cart">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="img-col">Item</th>
+                        <th class="price-col">Price</th>
+                        <th class="quantity-col">Quantity</th>
+                        <th class="total-col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="img-col">
+                            <img src="Images/pizza.jpg" alt="Pizza" />
+                            <div class="item">
+                                <h2>Pizza</h2>
+                                <p>
+                                    An oven-baked flatbread topped with a savory layer of tomato sauce, melted cheese, and assorted meats or
+                                    vegetables. Originating in Italy, it is shared globally as the ultimate party and slice-and-go comfort
+                                    meal.
+                                </p>
+                            </div>
+                        </td>
+                        <td class="price-col">₹120</td>
+                        <td class="quantity-col">
+                            <button>-</button>
+                            1
+                            <button>+</button>
+                        </td>
+                        <td class="total-col">₹120</td>
+                    </tr>
+                    <tr>
+                        <td class="img-col">
+                            <img src="Images/pasta.jpg" alt="Pasta" />
+                            <div class="item">
+                                <h2>Pasta</h2>
+                                <p>
+                                    An Italian staple made from wheat dough, shaped into diverse forms like spaghetti, penne, or macaroni,
+                                    and boiled until tender. It serves as a versatile canvas for rich ragùs, creamy alfredos, or simple
+                                    garlic and olive oil sauces.
+                                </p>
+                            </div>
+                        </td>
+                        <td class="price-col">₹100</td>
+                        <td class="quantity-col">
+                            <button>-</button>
+                            1
+                            <button>+</button>
+                        </td>
+                        <td class="total-col">₹100</td>
+                    </tr>
+                    <tr>
+                        <td class="last" colspan="1"><h2>Grand Total:</h2></td>
+                        <td class="last" colspan="1"><h2>₹220</h2></td>
+                        <td class="last" colspan="2"><button id="checkout">Checkout</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-box">
+                    <h2>Bite<span>Box</span></h2>
+                    <p>Delicious meals delivered to your doorstep.</p>
+                </div>
+                <div class="footer-box">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./bitedeals.html">BiteDeals</a></li>
+                        <li><a href="./cart.html">Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h3>Contact</h3>
+                    <p>Email: support@bitebox.com</p>
+                    <p>Phone: +91 1234567890</p>
+                </div>
+                <div class="footer-box">
+                    <h3>Follow Us</h3>
+                    <a class="social-icons" herf="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="social-icons" herf="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="social-icons" herf="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Bitebox. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
 </html>
