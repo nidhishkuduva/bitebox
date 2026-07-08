@@ -71,10 +71,6 @@ img {
     width: 180px;
 }
 
-.main {
-    background-color: beige;
-}
-
 nav a {
     display: flex;
     align-items: center;
@@ -194,7 +190,7 @@ footer {
     gap: 30px;
 }
 
-.footer-box h2, 
+.footer-box h2,
 .footer-box h3 {
     color: white;
     margin-bottom: 15px;
@@ -204,8 +200,8 @@ footer {
     color: red;
 }
 
-footer a{
-    color:#ccc;
+footer a {
+    color: #ccc;
     text-decoration: none;
 }
 
@@ -229,4 +225,49 @@ footer a:hover {
     padding-top: 10px;
     border-top: 1px solid #333;
     font-size: 14px;
+}
+
+#menu-btn {
+    visibility: hidden;
+}
+
+@media (max-width: 700px) {
+    #menu-btn {
+        display: block;
+        visibility: visible;
+        font-size: 22px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        width: 100%;
+        background-color: black;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        max-height: 75vh;     
+        overflow-y: auto;
+    }
+
+    nav ul li {
+        padding: 2px;
+        margin: 2px 0px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    #menuIcon {
+        display: block;
+    }
 }

@@ -31,3 +31,18 @@ function togglePasswordVisibility() {
         toggleIcon.classList.add("fa-eye");
     }
 }
+
+function toggleMenu() {
+    let menu = document.getElementById("navMenu");
+    let icon = document.getElementById("menuIcon");
+
+    menu.classList.toggle("show");
+
+    if (menu.classList.contains("show")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+    } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+    }
+}
