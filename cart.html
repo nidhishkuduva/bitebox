@@ -20,25 +20,18 @@
             </div>
             <nav>
                 <div class="navigation">
-                    <a href="index.html"><img src="../bitebox/Images/biteboxlogo.png" alt="Bitebox Logo" /></a>
-                    <ul>
-                        <li class="temp">
-                            <a href="./menu.html"><i class="fa-solid fa-bars"></i> Menu</a>
-                        </li>
-                        <li class="temp">
-                            <a href="./index.html"><i class="fa-solid fa-house"></i> Home</a>
-                        </li>
-                        <li class="temp">
-                            <a href="./bitedeals.html"><i class="fa-solid fa-drumstick-bite"></i> BiteDeals</a>
-                        </li>
-                        <li class="temp">
-                            <a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i> Cart</a>
-                        </li>
-                        <li class="temp">
-                            <a href="./login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
-                        </li>
-                    </ul>
-                </div>
+                <a href="index.html"><img src="../bitebox/Images/biteboxlogo.png" alt="Bitebox Logo"></a> 
+                <button id="menu-btn" onclick="toggleMenu()">
+                    <i id="menuIcon" class="fa-solid fa-bars"></i>
+                </button>
+                <ul id="navMenu">   
+                    <li class="temp"><a href="./menu.html"><i class="fa-solid fa-bars"></i> Menu</a></li>
+                    <li class="temp"><a href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li class="temp"><a href="./bitedeals.html"><i class="fa-solid fa-drumstick-bite"></i> BiteDeals</a></li>
+                    <li class="temp"><a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i> Cart</a></li>
+                    <li class="temp"><a href="./login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a></li>
+                </ul>
+            </div>
             </nav>
             <div class="tempdiv">
                 <hr style="padding-bottom: 7px" />
@@ -144,5 +137,6 @@
                 <p>© 2026 Bitebox. All rights reserved.</p>
             </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
